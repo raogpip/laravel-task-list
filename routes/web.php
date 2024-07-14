@@ -22,6 +22,6 @@ Route::get('/greet/{name}', function ($name) {
 });
 
 //fallback route
-Route::fallback(function () {
-    return 'still got somewhere';
-});
+// Route::fallback(function () {
+//     return 'still got somewhere';
+// });
