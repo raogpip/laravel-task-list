@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index', [
+        'name' => 'vito'
+    ]);
 });
 
 //simple route
@@ -22,6 +24,6 @@ Route::get('/greet/{name}', function ($name) {
 });
 
 //fallback route
-// Route::fallback(function () {
-//     return 'still got somewhere';
-// });
+Route::fallback(function () {
+    return 'still got somewhere';
+});
